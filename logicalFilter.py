@@ -13,7 +13,7 @@ type_mullions = DB.ElementCategoryFilter(DB.BuiltInCategory.OST_CurtainWallMulli
 
 all_filters = [type_rooms, type_floor, type_mullions, type_roof,type_stairs,type_wall]
 all_filters_types = List[DB.ElementFilter](all_filters)
-logical_and_filter = DB.LogicalAndFilter(all_filters_types)
+logical_or_filter = DB.LogicalOrFilter(all_filters_types)
 
 elemUniqueId = [
 '07ae6064-8e02-489e-896d-f7554545ebb2-0002d8b3',
@@ -33,6 +33,6 @@ list_filter = DB.ExclusionFilter(list_exclusion)
 
 
 
-elements = FEC(doc).WherePasses(logical_and_filter).WherePasses(list_filter)
+elements = FEC(doc).WherePasses(logical_or_filter).WherePasses(list_filter)
 print(sum([element.Id.IntegerValue for element in elements]))
 
