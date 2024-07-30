@@ -1,0 +1,14 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Default",
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [120],
+    "editor.wordWrapColumn": 120,
+    "python.analysis.extraPaths": [
+        "D:\\Revit\\stubs.min"
+        
+    ],
+}
