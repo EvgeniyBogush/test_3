@@ -15,5 +15,4 @@ for itm in elements_type:
             if itm.Id.IntegerValue < 200000:
                 sum += itm.Id.IntegerValue
 
-print
 print(sum)
